@@ -33,9 +33,7 @@ html, body {
 
 /* Hero Section */
 .hero {
-    background-color: white; /* Green */
-    /* color: linear-gradient( to right,#00416a, #799f0c, #ffe000); */
-    /* border-radius: 10px; */
+    background-color: white;
     padding: 30px 0;
 }
 .hero h2, .hero p {
