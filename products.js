@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const products = [
-        { name: "Fresh Vegetables", price: 20, img: "veggies1.jpg" },
-        { name: "Organic Fruits", price: 30, img: "fruits1.jpg" },
-        { name: "Dairy Products", price: 10, img: "dairy1.jpg" }
+        { name: "Fresh Vegetables", price: 20, img: "assets/spinatch.jpg" },
+        { name: "Organic Fruits", price: 230, img: "assets/apple.jpg" },
+        { name: "Dairy Products", price: 30, img: "assets/milk.jpg" }
     ];
 
     const productContainer = document.getElementById("product-list");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img src="${product.img}" class="card-img-top" alt="${product.name}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${product.name}</h5>
-                        <p class="card-text">$${product.price} per unit</p>
+                        <p class="card-text">₹${product.price} per unit</p>
                         <button class="btn btn-orange add-to-cart" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
                     </div>
                 </div>
