@@ -21,7 +21,7 @@ function addToCart(name, price) {
 
     let itemIndex = cart.findIndex(item => item.name === name);
     if (itemIndex > -1) {
-        cart[itemIndex].quantity += 1; // Increase quantity if item exists
+        cart[itemIndex].quantity += 1;
     } else {
         cart.push({ name, price, quantity: 1 });
     }

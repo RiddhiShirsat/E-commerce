@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     products.forEach(product => {
         const productCard = `
-            <div class="col-md-4">
+            <div class="col-md-4 m-2">
                 <div class="card product-card">
                     <img src="${product.img}" class="card-img-top" alt="${product.name}">
                     <div class="card-body text-center">
