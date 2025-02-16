@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let total = 0;
 
         cart.forEach((item, index) => {
-            if (!item.quantity) item.quantity = 1; // Fix for existing incorrect cart items
+            if (!item.quantity) item.quantity = 1;
             total += item.price * item.quantity;
 
             cartContainer.innerHTML += `
@@ -33,13 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-function removeFromCart(index) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    location.reload(); // Refresh cart page
-}
 
 document.getElementById("checkout-btn").addEventListener("click", function () {
     alert("Proceeding to checkout...");
